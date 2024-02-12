@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>User Authentication</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="grid place-items-center min-h-screen bg-purple-100">
+
+
+  <div class="flex flex-col items-center w-[90%] p-5 bg-white rounded-lg shadow-2xl md:w-[350px]">
+    
+    <div class="w-[75px] h-[75px] shadow-2xl rounded-full border-4 border-gray-300 overflow-hidden">
+      <img src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/9869ee0c-d5b8-48c3-a2b9-3feb4bc6fbf7.png" alt="user-img" class="w-full h-full object-cover"/>
+    </div>
+    
+    <p class="text-xs text-gray-400 mt-2 mb-2">Benji.H invited you to join</p>
+    
+    <h1 class="font-bold text-lg mb-2">Frontend Dev-ops</h1>
+    
+    <div class="p-3 mb-5 rounded-md text-gray-700 bg-gray-100 text-xs">
+      46K active users · 78K total users
+    </div>
+    
+    <div class="text-xs flex flex-col w-[80%] mb-5">
+      <label for="username" class="text-gray-600 mb-1">Username</label>
+      <input type="text" name="username" id="username" placeholder="How would you like people to call you?" class="border p-3 rounded-md focus:outline-rose-700">
+    </div>
+    
+    <div class="flex gap-3 w-[80%]">
+      <div class="grid place-items-center w-[20px] h-[20px] border border-gray-40 0 rounded-sm flex-none" id="check-area">
+        <input type="checkbox" name="check" id="check" class="opacity-0 fixed">
+        <svg xmlns="http://www.w3.org/2000/svg" id="check-icon" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M5 12l5 5l10 -10" />
+        </svg>
+      </div>
+      <label class="text-xs" for="check">
+        I have read and agree of the <span class="text-rose-600 underline">Terms of services</span> and <span class="text-rose-600 underline">Privacy policy</span>
+      </label>
+    </div>
+    
+    <button class="bg-rose-800 text-white text-xs py-3 rounded-md w-[80%] mt-7 border-2 border-rose-800 transition-all hover:bg-white hover:text-rose-800">Continue</button>
+    
+    <p class="text-xs text-rose-600 underline mt-6">Already have an account</p>
+    
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
